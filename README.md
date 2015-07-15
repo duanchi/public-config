@@ -4,10 +4,10 @@
 
 All config files must named in forms below:
 
-> `read` {APPLICATION_KEY}\_{SCOPE}_{ENVIRONMENT}.ini
+> `read` {APPLICATION_KEY}\_{ENVIRONMENT}\_{SCOPE}.ini
 
-> `segment` {APPLICATION_KEY}\_{SCOPE}_{ENVIRONMENT}.ini.segment
+> `segment` {APPLICATION_KEY}\_{ENVIRONMENT}\_{SCOPE}.ini.segment
 
 `.segment` file will merged by {config}_base.ini.
 
-It will load {config}\_base.ini while {config}_{environment}.ini not exist.
+It will load {APPLICATION_KEY}\_base\_{SCOPE}.ini while {APPLICATION_KEY}\_{ENVIRONMENT}\_{SCOPE}.ini not exist.
